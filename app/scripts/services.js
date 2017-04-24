@@ -3,14 +3,15 @@
 angular.module('confusionApp')
         .service('menuFactory', function() {
         	var dishes=[
-                 {
-                  name:'Uthapizza',
-                  image: 'images/uthapizza.png',
-                  category: 'mains',
-                   label:'Hot',
-                  price:'4.99',
-                  description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
-                   comments: [
+                {
+                	_id:0,
+                    name:'Uthapizza',
+                    image: 'images/uthapizza.png',
+                    category: 'mains',
+                    label:'Hot',
+                    price:'4.99',
+                    description:'A unique combination of Indian Uthappam (pancake) and Italian pizza, topped with Cerignola olives, ripe vine cherry tomatoes, Vidalia onion, Guntur chillies and Buffalo Paneer.',
+                    comments: [
                        {
                            rating:5,
                            comment:"Imagine all the eatables, living in conFusion!",
@@ -40,16 +41,18 @@ angular.module('confusionApp')
                            comment:"It's your birthday, we're gonna party!",
                            author:"25 Cent",
                            date:"2011-12-02T17:57:28.556094Z"
-                       }                                                          ]
+                       }                                                          
+                    ]
                 },
                 {
-                  name:'Zucchipakoda',
-                   image: 'images/zucchipakoda.png',
-                  category: 'appetizer',
-                   label:'',
-                  price:'1.99',
-                  description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
-                  comments: [
+                	_id:1,
+                    name:'Zucchipakoda',
+                    image: 'images/zucchipakoda.png',
+                    category: 'appetizer',
+                    label:'',
+                    price:'1.99',
+                    description:'Deep fried Zucchini coated with mildly spiced Chickpea flour batter accompanied with a sweet-tangy tamarind sauce',
+                    comments: [
                        {
                            rating:5,
                            comment:"Imagine all the eatables, living in conFusion!",
@@ -79,16 +82,18 @@ angular.module('confusionApp')
                            comment:"It's your birthday, we're gonna party!",
                            author:"25 Cent",
                            date:"2011-12-02T17:57:28.556094Z"
-                       }                                                          ]
+                       }                                                          
+                    ]
                 },
                 {
-                  name:'Vadonut',
-                   image: 'images/vadonut.png',
-                  category: 'appetizer',
-                   label:'New',
-                  price:'1.99',
-                  description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
-                   comments: [
+                	_id:2,
+                    name:'Vadonut',
+                    image: 'images/vadonut.png',
+                    category: 'appetizer',
+                    label:'New',
+                    price:'1.99',
+                    description:'A quintessential ConFusion experience, is it a vada or is it a donut?',
+                    comments: [
                        {
                            rating:5,
                            comment:"Imagine all the eatables, living in conFusion!",
@@ -119,16 +124,17 @@ angular.module('confusionApp')
                            author:"25 Cent",
                            date:"2011-12-02T17:57:28.556094Z"
                        }
-                                                  ]
+                    ]
                 },
                 {
-                  name:'ElaiCheese Cake',
-                   image: 'images/elaicheesecake.png',
-                  category: 'dessert',
-                   label:'',
-                  price:'2.99',
-                  description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
-                   comments: [
+                	_id:3,
+                    name:'ElaiCheese Cake',
+                    image: 'images/elaicheesecake.png',
+                    category: 'dessert',
+                    label:'',
+                    price:'2.99',
+                    description:'A delectable, semi-sweet New York Style Cheese Cake, with Graham cracker crust and spiced with Indian cardamoms',
+                    comments: [
                        {
                            rating:5,
                            comment:"Imagine all the eatables, living in conFusion!",
@@ -158,7 +164,8 @@ angular.module('confusionApp')
                            comment:"It's your birthday, we're gonna party!",
                            author:"25 Cent",
                            date:"2011-12-02T17:57:28.556094Z"
-                       }                                                          ]
+                       }                                                          
+                    ]
                 }
             ];
 
