@@ -24,7 +24,7 @@ angular.module('confusionApp')
     
                 this.getDish = function (index) {
                     
-                    return $http.get(baseURL+"dishees/"+index);
+                    return $http.get(baseURL+"dishes/"+index);
                 };
     
                 this.getPromotion = function (index) {
