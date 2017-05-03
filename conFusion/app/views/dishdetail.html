@@ -25,13 +25,17 @@
                 </div>
             </div>
             <div class="col-xs-9 col-xs-offset-1" ng-controller="DishCommentController">
-                <ul>
-                    <blockquote ng-repeat="comment in dish.comments">
-                        <p>{{comment.rating}} Stars</p>
+                <h4>Customer Comments</h4> &nbsp; Sort by: 
+                <input type="text" class="form-control-sm" ng-model="sortText"> 
+
+                <div ng-repeat="comment in dish.comments |orderBy:sortText">
+                    <blockquote>
+                        <p>{{comment.rating}} Stars</p>       
                         <p>{{comment.comment}}</p>
-                        <footer>{{comment.author}}, {{comment.date | date}}</footer>
-                    </blockquote>
-                </ul>
+                        <footer>{{comment.author}}, {{comment.date | date:'longDate'}}</footer></footer>
+                    </blockquote>  
+                </div>                    
+            
                 <ul ng-show="commentForm.$valid && !commentForm.$pristine">
                     <blockquote>
                         <p>{{comment.rating}} Stars</p>
@@ -61,7 +65,7 @@
                             <label class="radio-inline"><input type='radio' name="rating" value="2" ng-model="comment.rating">2</label>
                             <label class="radio-inline"><input type='radio' name="rating" value="3" ng-model="comment.rating">3</label>
                             <label class="radio-inline"><input type='radio' name="rating" value="4" ng-model="comment.rating">4</label>
-                            <label class="radio-inline"><input type='radio' name="rating" value="5" ng-model="comment.rating" checked>5</label>
+                            <label class="radio-inline"><input type='radio' name="rating" value="5" checked ng-model="comment.rating" >5</label>
                         </div>
                     </div>
                     <div class="form-group" ng-class="{ 'has-error':
